@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "rinshad", "rinshadwebsql", "rinshad");
+$conn = new mysqli("localhost", "root", "", "rinshad");
 if ($conn->connect_error) die("Database connection failed");
 
 if (!empty($_POST['submit'])) {
@@ -14,7 +14,7 @@ if (!empty($_POST['submit'])) {
         $row = $u->fetch_assoc();
 
         if ($row['password'] == $pass) {  // Password correct
-            header("Location: newwelcome.php?user=" . urlencode($user));
+            header("Location: welcome.php?user=" . urlencode($user));
             exit;
         } 
         else {                             // Username correct, password wrong

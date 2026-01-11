@@ -4,5 +4,5 @@ echo "<h2 align='center'>Welcome, $user!</h2>";
 ?>
 
 <p align="center">
-    <a href="newlogin.php">Logout</a>
+    <a href="login.php">Logout</a>
 </p>

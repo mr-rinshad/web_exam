@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "rinshad", "rinshadwebsql", "rinshad");
+$conn = new mysqli("localhost", "root", "", "rinshad");
 if ($conn->connect_error) die("Connection failed");
 
 if (!empty($_POST['submit'])) {

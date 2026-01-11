@@ -1,6 +1,6 @@
 <?php
 // DB connection
-$conn = new mysqli("localhost", "rinshad", "rinshadwebsql", "rinshad");
+$conn = new mysqli("localhost", "root", "", "rinshad");
 if ($conn->connect_error) die("DB Error");
 
 // Insert when submitted
